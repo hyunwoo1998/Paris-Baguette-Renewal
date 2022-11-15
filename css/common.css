@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+/* 폰트 */
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 공통 */
+:root {
+    --gmarketM: 'GmarketSansMedium', sans-serif;
+    --gmarketB: 'GmarketSansBold', sans-serif;
+    --width: 1400px;
+    --blue: #023586;
+}
+
+::selection {
+    background-color: var(--blue);
+    color: white;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body, button {
+    position: relative;
+    font-family: var(--gmarketM);
+    letter-spacing: .5px;
+    word-break: keep-all;
+}
+
+a, button {
+    cursor: pointer;
+}
+
+img {
+    -webkit-user-drag: none;
+}
+
+.container {
+    position: relative;
+    max-width: var(--width);
+    margin: 0 auto;
+    padding: 0 20px;
+}

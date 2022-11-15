@@ -1,0 +1,389 @@
+@charset "utf-8";
+
+/* index-main */
+.img {
+    position: relative;
+    display: block;
+}
+
+.img>img {
+    width: 100%;
+}
+
+.list {
+    display: flex;
+    gap: 1%;
+}
+
+.main-section {
+    position: relative;
+    margin: 80px 0 140px;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.section-title {
+    position: relative;
+    padding: 0 10px;
+    font-family: var(--gmarketB);
+    font-size: 2.4rem;
+    letter-spacing: 2px;
+    color: white;
+}
+
+.section-title:hover {
+    opacity: 1;
+}
+
+.section-title::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 100%;
+    height: 100%;
+    padding: 10px 0;
+    z-index: -1;
+    background: var(--blue);
+    box-shadow: 4px 4px 0 rgba(0, 0, 0, .7);
+}
+
+.more-btn {
+    font-size: 1.4rem;
+    padding-top: 3px;
+    border-bottom: 2px solid black;
+}
+
+.desc {
+    margin-top: 20px;
+}
+
+.post-title {
+    font-family: var(--gmarketB);
+    margin-bottom: 12px;
+    line-height: 36px;
+}
+
+.post-excerpt {
+    font-size: 1.6rem;
+    line-height: 24px;
+}
+
+/* promotion-section + slick 공통 */
+#promotion-section .section-header {
+    position: absolute;
+    z-index: 99;
+    top: 30px;
+    left: 10px;
+    right: 30px;
+    color: white;
+}
+
+#promotion-section .more-btn {
+    position: relative;
+    border: 0;
+}
+
+#promotion-section .more-btn::before {
+    content: "";
+    position: absolute;
+    left: -10px;
+    right: -8px;
+    top: -5px;
+    bottom: 0;
+    border: 2px solid white;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.promotion-item img {
+    filter: brightness(70%);
+    transition: filter .2s ease-out;
+}
+
+.promotion-item img:hover {
+    filter: brightness(100%);
+}
+
+.slick-arrow {
+    position: absolute;
+    top: 50%;
+    margin: 0 10px;
+    z-index: 1;
+    border: 0;
+    background: none;
+    color: white;
+    font-size: 5rem;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, .8);
+    opacity: .8;
+    transition: opacity .2s;
+    transform: translateY(-50%);
+}
+
+.slick-arrow:hover {
+    opacity: 1;
+}
+
+.banner-list .slick-arrow {
+    font-size: 6rem;
+}
+
+.slick-prev {
+    left: 0;
+}
+
+.slick-next {
+    right: 0;
+}
+
+.slick-dots {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 80px;
+    bottom: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.slick-dots button {
+    width: 2px;
+    height: 12px;
+    background: white;
+    border: 0;
+    border-radius: 100%;
+    text-indent: -9999px;
+    transition: all .3s;
+}
+
+.slick-active>button {
+    background: var(--blue);
+}
+
+/* magazine-section */
+.magazine-item {
+    position: relative;
+}
+
+.magazine-item>.img::after {
+    content: "";
+    position: absolute;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9));
+    height: 30%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.magazine-item>.desc {
+    position: absolute;
+    height: 110px;
+    bottom: 0;
+    color: white;
+    padding: 0 30px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, .8);
+}
+
+.magazine-item .post-title {
+    font-size: 2.4rem;
+}
+
+/* story-section */
+.story-list {
+    flex-wrap: wrap;
+}
+
+.story-item {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.badge {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 5px 10px;
+    background: var(--blue);
+    color: white;
+    font-size: 1.2rem;
+}
+
+.story-item .post-title {
+    font-size: 2.4rem;
+    line-height: 30px;
+}
+
+.post-date {
+    display: block;
+    margin-top: 15px;
+    font-size: 1.2rem;
+    color: #888;
+}
+
+/* products-section */
+.products-list .slick-slide {
+    margin: 0 10px;
+}
+
+.products-list .slick-list {
+    margin: 0 -10px;
+}
+
+.products-name {
+    font-size: 1.6rem;
+    margin-top: 20px;
+}
+
+/* instagram-section */
+#instagram-section .section-title>a {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.section-title small {
+    font-family: var(--gmarketM);
+    font-size: 1.6rem;
+    letter-spacing: .5px;
+    margin-top: 20px;
+}
+
+.instagram-list {
+    gap: 10px;
+}
+
+.instagram-item {
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+
+.instagram-item>.img {
+    transition: all .3s ease;
+}
+
+.img-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 2.4rem;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, .8);
+    opacity: .8;
+    transition: all .3s ease;
+}
+
+.instagram-overlay {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    bottom: 2px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    visibility: hidden;
+    z-index: 2;
+    transition: opacity .3s ease, visibility .3s ease;
+}
+
+.instagram-content {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1.8rem;
+    color: white;
+    text-align: center;
+    transform: translateY(10%);
+    transition: all .3s ease;
+}
+
+.instagram-counter {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.instagram-counter>* {
+    margin: 0 20px;
+}
+
+.instagram-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    max-height: 110px;
+    overflow: hidden;
+    line-height: 22px;
+    font-size: 1.4rem;
+}
+
+.instagram-item:hover>.img {
+    filter: grayscale(100%);
+}
+
+.instagram-item:hover .img-icon {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.instagram-item:hover>.instagram-overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+.instagram-item:hover .instagram-content {
+    transform: translateY(0);
+}
+
+/* guide-section */
+#guide-section {
+    margin: 60px 0 20px;
+}
+
+.guide-list {
+    display: flex;
+}
+
+.guide-list>a {
+    position: relative;
+    flex: 1;
+    padding: 0 100px 0 50px;
+}
+
+.guide-list>a+a::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-left: 1px solid var(--blue);
+}
+
+.guide-list h3 {
+    margin: 10px 0 20px;
+    font-family: var(--gmarketB);
+    font-size: 2.4rem;
+    color: var(--blue);
+}
+
+.guide-list h2 {
+    line-height: 24px;
+    font-size: 1.6rem;
+}
+
+.guide-list .arrow {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    padding: 8px 12px;
+    border-radius: 100%;
+    background: var(--blue);
+    color: white;
+    font-size: 1.6rem;
+    transform: translateY(-50%);
+}

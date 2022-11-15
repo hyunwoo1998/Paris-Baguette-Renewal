@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+/* aside */
+#aside {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    z-index: 100;
+}
+
+.aside-list {
+    padding: 10px 5px;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.aside-item {
+    color: white;
+    text-align: center;
+    font-size: 1.4rem;
+    opacity: .6;
+    transition: opacity .2s;
+}
+
+.aside-item:hover {
+    opacity: 1;
+}
+
+.aside-item>a {
+    display: block;
+    padding: 10px 0;
+    margin: 0 5px;
+}
+
+#top-btn {
+    border-bottom: 1px solid #979797;
+}
+
+.aside-item i[class*="-icon"] {
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin: 0 auto 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.top-icon {
+    background-image: url(../img/icon/aside1.svg);
+}
+
+.store-icon {
+    background-image: url(../img/icon/aside2.svg);
+}
+
+.delivery-icon {
+    background-image: url(../img/icon/aside3.svg);
+}
+
+.promotion-icon {
+    background-image: url(../img/icon/aside4.svg);
+}
+
+.franchise-icon {
+    background-image: url(../img/icon/aside5.svg);
+}
+
+.app-icon {
+    background-image: url(../img/icon/aside6.svg);
+}

@@ -1,0 +1,156 @@
+@charset "utf-8";
+
+/* footer */
+#footer {
+    background: #454a56;
+    color: white;
+}
+
+.widget-list {
+    padding: 60px 0;
+}
+
+.widget {
+    flex: 1;
+}
+
+.widget-header {
+    font-family: var(--gmarketB);
+    font-size: 2.4rem;
+    margin-bottom: 30px;
+}
+
+.widget-body {
+    font-size: 1.4rem;
+}
+
+.info-item {
+    margin-bottom: 14px;
+}
+
+.contact-tel {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.contact-time {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-size: 1.3rem;
+}
+
+.footer-logos>a:first-child>img {
+    display: block;
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+.footer-logos>a:not(:first-child)>img {
+    display: inline-block;
+    height: 36px;
+    margin: 0 5px 10px 0;
+}
+
+.sns>a {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    margin-right: 15px;
+    border-radius: 100%;
+    background: white;
+    color: #454a56;
+    text-align: center;
+}
+
+.sns>a>i {
+    padding: 8px 0;
+    font-size: 3rem;
+}
+
+.brand-site {
+    margin-top: 30px;
+    position: relative;
+}
+
+.selector {
+    position: relative;
+    padding: 10px 70px 10px 15px;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    border-radius: 5px;
+    background: transparent;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.4rem;
+}
+
+.selector-icon {
+    position: absolute;
+    right: 15px;
+    top: 12px;
+    font-size: 1.8rem;
+}
+
+.links {
+    position: absolute;
+    display: none;
+    left: 0;
+    bottom: 100%;
+    width: 100%;
+    max-width: 170px;
+    border: solid 1px #979797;
+    border-radius: 5px;
+    background: #888;
+    font-size: 1.4rem;
+}
+
+.menu-item {
+    padding: 5px 0;
+}
+
+.menu-item>span {
+    display: block;
+    margin: 5px 10px;
+    user-select: none;
+    color: #ddd;
+    cursor: default;
+}
+
+.sub-item {
+    position: relative;
+}
+
+.sub-item>a {
+    display: block;
+    padding: 6px 25px;
+}
+
+.sub-item>a:hover {
+    background: var(--blue);
+}
+
+.footer-menu {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    font-size: 1.2rem;
+}
+
+.footer-menu>li+li::before {
+    content: "┃";
+}
+
+.footer-menu>li:nth-child(2)>a {
+    color: #ff2013;
+}
+
+.copy {
+    padding: 10px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.3);
+    text-align: center;
+}
+
+.copy>span {
+    display: inline-block;
+    padding: 3px 0;
+}

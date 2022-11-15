@@ -1,0 +1,157 @@
+@charset "utf-8";
+
+/* header */
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+    background: var(--blue);
+    z-index: 100;
+}
+
+#header>.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+#hamburger-btn {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    margin-left: 10px;
+    border: 0;
+    background: none;
+    color: white;
+    font-size: 2.4rem;
+    transform: translateY(-50%);
+}
+
+.gnb-right {
+    position: relative;
+}
+
+.gnb-menu {
+    display: flex;
+    gap: 20px;
+    font-size: 1.6rem;
+}
+
+.gnb-menu>li {
+    position: relative;
+    padding: 35px 2px;
+    cursor: pointer;
+}
+
+.gnb-menu>li::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    background: white;
+    transition: all .2s;
+}
+
+.gnb-menu>li:hover::before {
+    width: 100%;
+}
+
+.gnb-menu>li:hover>.sub-menu {
+    visibility: visible;
+    opacity: 1;
+}
+
+.sub-menu {
+    position: absolute;
+    display: flex;
+    visibility: hidden;
+    opacity: 0;
+    top: 85px;
+    padding: 25px;
+    background: white;
+    color: #888;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+    z-index: 100;
+    transition: visibility .2s ease-out, opacity .2s ease-out;
+}
+
+.sub-menu-list>li {
+    width: 150px;
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    transition: all .2s ease-out;
+}
+
+.sub-menu-list>li:hover {
+    color: var(--blue);
+}
+
+#logo {
+    display: block;
+    width: 250px;
+    height: 20px;
+    margin: 0 auto;
+    text-indent: -9999px;
+    background: url(../img/icon/logo.svg) center/contain no-repeat;
+}
+
+.gnb-right {
+    display: flex;
+}
+
+#search-btn {
+    margin-left: 10px;
+    border: 0;
+    background: none;
+    color: white;
+    font-size: 1.5rem;
+}
+
+/* search-form */
+#search-form {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 200;
+}
+
+#search-form form {
+    position: relative;
+}
+
+#search-form input {
+    width: 100%;
+    padding: 35px 70px;
+    border: 0;
+    font-size: 1.8rem;
+    font-family: var(--GmarketM);
+}
+
+#search-form button {
+    position: absolute;
+    top: 50%;
+    border: 0;
+    background: 0;
+    transform: translateY(-50%);
+}
+
+#search {
+    right: 20px;
+}
+
+#search-close {
+    left: 20px;
+}
+
+#search-form i[class*="-icon"] {
+    font-size: 3rem;
+    color: var(--blue);
+}

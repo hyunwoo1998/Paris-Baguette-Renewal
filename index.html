@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>파리바게트</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./img/icon/favicon.ico" type="./img/x-icon">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- Slick -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/mobileNav.css">
+    <link rel="stylesheet" href="./css/indexMain.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/aside.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+</head>
+
+<body>
+    <header id="header">
+        <div class="container">
+            <button type="button" id="hamburger-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <nav class="gnb">
+                <div class="gnb-left">
+                    <ul class="gnb-menu">
+                        <li>
+                            <a href="#">브랜드 매거진</a>
+                        </li>
+                        <li>
+                            <a href="#">브랜드 스토리</a>
+                        </li>
+                        <li>
+                            <a href="#">제품 안내</a>
+                            <div class="sub-menu">
+                                <ul class="sub-menu-list">
+                                    <li>
+                                        <a href="#">전체</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">빵</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">케이크</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">샌드위치/샐러드</a>
+                                    </li>
+                                </ul>
+                                <ul class="sub-menu-list">
+                                    <li>
+                                        <a href="#">선물</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">디저트/스낵</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">음료/아이스</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">간편식</a>
+                                    </li>
+                                </ul>
+                                <a href="#">
+                                    <img src="./img/menu.jpeg" alt="menu-img">
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <a href="./index.html" id="logo">PARIS BAGUETTE</a>
+            <nav class="gnb">
+                <div class="gnb-right">
+                    <ul class="gnb-menu">
+                        <li>
+                            <a href="#">매장 안내</a>
+                        </li>
+                        <li>
+                            <a href="#">배달 신청</a>
+                        </li>
+                        <li>
+                            <a href="#">프로모션</a>
+                        </li>
+                    </ul>
+                    <button type="button" id="search-btn">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div id="search-form">
+        <form action="/" method="get" name="search">
+            <button type="button" id="search-close">
+                <i class="fa-solid fa-xmark close-icon"></i>
+            </button>
+            <input type="text" placeholder="검색">
+            <button type="submit" id="search">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            </button>
+        </form>
+    </div>
+
+    <nav id="mobile-nav">
+        <div class="mobile-nav-inner">
+            <div class="mobile-nav-header">
+                <button type="button" id="hamburger-close">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div class="mobile-nav-body">
+                <ul class="mobile-nav-list">
+                    <li class="mobile-nav-item">
+                        <a href="#">브랜드 매거진</a>
+                    </li>
+                    <li class="mobile-nav-item">
+                        <a href="#">브랜드 스토리</a>
+                    </li>
+                    <li class="mobile-nav-item">
+                        <a href="javascript:void(0);" class="mobile-sub-btn">
+                            <span>제품 안내</span>
+                            <i class="fa-solid fa-angle-down mobile-sub-icon"></i>
+                        </a>
+                        <div class="mobile-sub-menu">
+                            <ul class="mobile-sub-list">
+                                <li class="mobile-sub-item">
+                                    <a href="#">전체</a>
+                                </li>
+                                <li class="mobile-sub-item">
+                                    <a href="#">빵</a>
+                                </li>
+                                <li class="mobile-sub-item">
+                                    <a href="#">케이크</a>
+                                </li>
+                                <li class="mobile-sub-item">
+                                    <a href="#">샌드위치/샐러드</a>
+                                </li>
+                                <li class="mobile-sub-item">
+                                    <a href="#">선물</a>
+                                </li>
+                                <li class="mobile-sub-item">
+                                    <a href="#">디저트/스낵</a>
+                                </li>
+                                <li class="mobile-sub-item">
+                                    <a href="#">음료/아이스</a>
+                                </li>
+                                <li class="mobile-sub-item">
+                                    <a href="#">간편식</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="mobile-nav-list">
+                    <li class="mobile-nav-item">
+                        <a href="#">매장 안내</a>
+                    </li>
+                    <li class="mobile-nav-item">
+                        <a href="#">배달 신청</a>
+                    </li>
+                    <li class="mobile-nav-item">
+                        <a href="#">프로모션</a>
+                    </li>
+                </ul>
+                <div class="follow-us">
+                    <h4>Follow Us</h4>
+                    <div class="mobile-nav-sns">
+                        <a href="#">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main">
+        <section id="promotion-section" class="main-section">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <a href="#">프로모션</a>
+                </h2>
+                <a href="#" class="more-btn">더 보기</a>
+            </div>
+            <div class="section-body">
+                <ul class="promotion-list">
+                    <li class="promotion-item">
+                        <a href="#" class="img">
+                            <img src="./img/banner1.jpg" alt="banner1">
+                        </a>
+                    </li>
+                    <li class="promotion-item">
+                        <a href="#" class="img">
+                            <img src="./img/banner2.jpg" alt="banner2">
+                        </a>
+                    </li>
+                    <li class="promotion-item">
+                        <a href="#" class="img">
+                            <img src="./img/banner3.jpg" alt="banner3">
+                        </a>
+                    </li>
+                    <li class="promotion-item">
+                        <a href="#" class="img">
+                            <img src="./img/banner4.jpg" alt="banner4">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="magazine-section" class="main-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <a href="#">브랜드 매거진</a>
+                    </h2>
+                    <a href="#" class="more-btn">더 보기</a>
+                </div>
+                <div class="section-body">
+                    <ul class="magazine-list list">
+                        <li class="magazine-item">
+                            <a href="#" class="img">
+                                <img src="./img/magazine1.png" alt="magazine1">
+                            </a>
+                            <a href="#" class="desc">
+                                <h3 class="post-title">무안 양파</h3>
+                                <span class="post-excerpt">무안 양파 농가와 함께한 모두가 행복한 ESG 행복상생 프로젝트</span>
+                            </a>
+                        </li>
+                        <li class="magazine-item">
+                            <a href="#" class="img">
+                                <img src="./img/magazine2.png" alt="magazine2">
+                            </a>
+                            <a href="#" class="desc">
+                                <h3 class="post-title">파리바게뜨 마카롱 8종</h3>
+                                <span class="post-excerpt">더욱 새로워진 파바 리뉴얼 마카롱</span>
+                            </a>
+                        </li>
+                        <li class="magazine-item">
+                            <a href="#" class="img">
+                                <img src="./img/magazine3.png" alt="magazine3">
+                            </a>
+                            <a href="#" class="desc">
+                                <h3 class="post-title">논산 비타베리 딸기</h3>
+                                <span class="post-excerpt">논산 청년농부와 함께한 모두가 행복한 ESG 행복상생 프로젝트</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="story-section" class="main-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <a href="#">브랜드 스토리</a>
+                    </h2>
+                    <a href="#" class="more-btn">더 보기</a>
+                </div>
+                <div class="section-body">
+                    <ul class="story-list list">
+                        <li class="story-item">
+                            <a href="#" class="img">
+                                <img src="./img/story1.png" alt="story1">
+                                <span class="badge">브랜드 영상</span>
+                            </a>
+                            <div class="desc">
+                                <a href="#">
+                                    <h3 class="post-title">위로의 실키롤 With 빵식가 최시원</h3>
+                                    <span class="post-excerpt">[나는 빵식가다 with 최시원] 위로의 실키롤 편</span>
+                                </a>
+                                <span class="post-date">2022-06-24</span>
+                            </div>
+                        </li>
+                        <li class="story-item">
+                            <a href="#" class="img">
+                                <img src="./img/story2.png" alt="story2">
+                                <span class="badge">브랜드 영상, 광고</span>
+                            </a>
+                            <div class="desc">
+                                <a href="#">
+                                    <h3 class="post-title">파바 실키롤케익💙 기네스북 등재 2주년!</h3>
+                                    <span class="post-excerpt">세계에서 가장 사랑받은 파바의 실키롤케익💙기네스북 등재 2주년 축하해주세요🏆</span>
+                                </a>
+                                <span class="post-date">2022-06-16</span>
+                            </div>
+                        </li>
+                        <li class="story-item">
+                            <a href="#" class="img">
+                                <img src="./img/story3.png" alt="story3">
+                                <span class="badge">브랜드 영상</span>
+                            </a>
+                            <div class="desc">
+                                <a href="#">
+                                    <h3 class="post-title">파바 X 요리용디! 용디가 소개하는 호랑이도 반한 마늘 레시피!🧄</h3>
+                                    <span class="post-excerpt">동굴 격리 100일?요즘 호랑이는 파바로 간다🐯🧄</span>
+                                </a>
+                                <span class="post-date">2022-06-13</span>
+                            </div>
+                        </li>
+                        <li class="story-item">
+                            <a href="#" class="img">
+                                <img src="./img/story4.png" alt="story4">
+                                <span class="badge">브랜드 영상</span>
+                            </a>
+                            <div class="desc">
+                                <a href="#">
+                                    <h3 class="post-title">우파만💙빵지순례 3탄 – 제주공항 렌터카하우스점편</h3>
+                                    <span class="post-excerpt">우리, 파바에서 만나요! 빵지순례 3탄 – 제주공항 렌터카하우스점편</span>
+                                </a>
+                                <span class="post-date">2022-06-13</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="products-section" class="main-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <a href="#">제품 안내</a>
+                    </h2>
+                    <a href="#" class="more-btn">더 보기</a>
+                </div>
+                <div class="section-body">
+                    <ul class="products-list">
+                        <li class="products-item">
+                            <a href="#" class="img">
+                                <img src="./img/products1.jpg" alt="products1">
+                            </a>
+                            <a href="#" class="desc">
+                                <h3 class="products-name">마늘꽃이 피었습니다</h3>
+                            </a>
+                        </li>
+                        <li class="products-item">
+                            <a href="#" class="img">
+                                <img src="./img/products2.jpg" alt="products2">
+                            </a>
+                            <a href="#" class="desc">
+                                <h3 class="products-name">부드러운 갈릭 브레드</h3>
+                            </a>
+                        </li>
+                        <li class="products-item">
+                            <a href="#" class="img">
+                                <img src="./img/products3.jpg" alt="products3">
+                            </a>
+                            <a href="#" class="desc">
+                                <h3 class="products-name">갈릭 치즈 브레드</h3>
+                            </a>
+                        </li>
+                        <li class="products-item">
+                            <a href="#" class="img">
+                                <img src="./img/products4.jpg" alt="products4">
+                            </a>
+                            <a href="#" class="desc">
+                                <h3 class="products-name">버터 갈릭 뀐아망</h3>
+                            </a>
+                        </li>
+                        <li class="products-item">
+                            <a href="#" class="img">
+                                <img src="./img/products5.jpg" alt="products5">
+                            </a>
+                            <a href="#" class="desc">
+                                <h3 class="products-name">고짠고짠 소금 버터링</h3>
+                            </a>
+                        </li>
+                        <li class="products-item">
+                            <a href="#" class="img">
+                                <img src="./img/products6.jpg" alt="products6">
+                            </a>
+                            <a href="#" class="desc">
+                                <h3 class="products-name">고구마 품은 꽈배기</h3>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="instagram-section" class="main-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <a href="#">
+                            <span>인스타그램</span>
+                            <small>@parisbaguette_kr</small>
+                        </a>
+                    </h2>
+                </div>
+                <div class="section-body">
+                    <ul class="instagram-list list">
+                        <li class="instagram-item">
+                            <a href="#" class="img">
+                                <img src="./img/instagram1.jpg" alt="instagram1">
+                                <span class="img-icon"><i class="fa-solid fa-video"></i></span>
+                            </a>
+                            <a href="#" class="instagram-overlay">
+                                <div class="instagram-content">
+                                    <div class="instagram-counter">
+                                        <div class="likes-counter">
+                                            <span><i class="fa-regular fa-heart"></i></span>
+                                            <span>318</span>
+                                        </div>
+                                        <div class="comment-counter">
+                                            <span><i class="fa-regular fa-comment"></i></span>
+                                            <span>27</span>
+                                        </div>
+                                    </div>
+                                    <p class="instagram-text">
+                                        고로케맛집 파바
+                                        신메뉴 ‘XO고로케’ 출시📢
+                                        너무 맛있어서 기절..XO…😵
+                                        바삭촉촉 겉바속촉 식감은 기본☝
+                                        건새우, 건가리비 등 해산물을
+                                        베이스로 한 만능 중화소스인
+                                        XO소스가 들어간 고로케로
+                                        감칠맛이 가~득하답니다🤪
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="instagram-item">
+                            <a href="#" class="img">
+                                <img src="./img/instagram2.jpg" alt="instagram2">
+                                <span class="img-icon"><i class="fa-solid fa-video"></i></span>
+                            </a>
+                            <a href="#" class="instagram-overlay">
+                                <div class="instagram-content">
+                                    <div class="instagram-counter">
+                                        <div class="likes-counter">
+                                            <span><i class="fa-regular fa-heart"></i></span>
+                                            <span>292</span>
+                                        </div>
+                                        <div class="comment-counter">
+                                            <span><i class="fa-regular fa-comment"></i></span>
+                                            <span>22</span>
+                                        </div>
+                                    </div>
+                                    <p class="instagram-text">
+                                        축~하~합~~니~다 ~🎤🎶
+                                        축하합니~다 ~ 👏👏
+                                        실키롤케익 🏆기네스 등재🏆
+                                        2주년을 축하합니다! 🎉
+                                        지난 2020년, 실키롤이
+                                        세계에서 가장 많이 팔린 롤케익으로
+                                        기네스북에 등재된 지 벌써 2년이 되었어요!🥳
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="instagram-item">
+                            <a href="#" class="img">
+                                <img src="./img/instagram3.jpg" alt="instagram3">
+                                <span class="img-icon"><i class="fa-solid fa-video"></i></span>
+                            </a>
+                            <a href="#" class="instagram-overlay">
+                                <div class="instagram-content">
+                                    <div class="instagram-counter">
+                                        <div class="likes-counter">
+                                            <span><i class="fa-regular fa-heart"></i></span>
+                                            <span>437</span>
+                                        </div>
+                                        <div class="comment-counter">
+                                            <span><i class="fa-regular fa-comment"></i></span>
+                                            <span>7</span>
+                                        </div>
+                                    </div>
+                                    <p class="instagram-text">
+                                        🏆축배🏆를 들어~라🎵
+                                        실키롤케익 기네스 등재 2주년 축배를!
+                                        세계에서 제일~ 잘 팔린 롤케익으로
+                                        기네스북에 등재된지 벌써 2년이래요~👏🎉
+                                        파바가 여러분의 사랑에 보답하기 위해
+                                        이벤트를 준비했다지요~😎
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="instagram-item">
+                            <a href="#" class="img">
+                                <img src="./img/instagram4.jpg" alt="instagram4">
+                                <span class="img-icon"><i class="fa-solid fa-clone"></i></span>
+                            </a>
+                            <a href="#" class="instagram-overlay">
+                                <div class="instagram-content">
+                                    <div class="instagram-counter">
+                                        <div class="likes-counter">
+                                            <span><i class="fa-regular fa-heart"></i></span>
+                                            <span>791</span>
+                                        </div>
+                                        <div class="comment-counter">
+                                            <span><i class="fa-regular fa-comment"></i></span>
+                                            <span>197</span>
+                                        </div>
+                                    </div>
+                                    <p class="instagram-text">
+                                        (슬라이드를 넘겨 혜택보기👉)
+                                        여러분과 함께 소통하는
+                                        파리바게뜨 빵/지/순/례 4탄!🍞
+                                        📍6월 23일(목) 오후 8시!
+                                        우리, 파리바게뜨 공식 인스타그램과
+                                        판교 랩오파점에서 만나요!💙
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="instagram-item">
+                            <a href="#" class="img">
+                                <img src="./img/instagram5.jpg" alt="instagram5">
+                                <span class="img-icon"><i class="fa-solid fa-video"></i></span>
+                            </a>
+                            <a href="#" class="instagram-overlay">
+                                <div class="instagram-content">
+                                    <div class="instagram-counter">
+                                        <div class="likes-counter">
+                                            <span><i class="fa-regular fa-heart"></i></span>
+                                            <span>420</span>
+                                        </div>
+                                        <div class="comment-counter">
+                                            <span><i class="fa-regular fa-comment"></i></span>
+                                            <span>119</span>
+                                        </div>
+                                    </div>
+                                    <p class="instagram-text">
+                                        빠라바라빠라밤~!
+                                        이번엔 판교로 빵지순례 갑니다!
+                                        최고의 제품과 새로운 경험을
+                                        제일 먼저 선사해 줄 랩오브파리바게뜨!😊
+                                        랩오파에서만 만나볼 수 있는
+                                        파바 제품들과 공간들을 아낌없이
+                                        팍팍 소개해드릴 예정이니 이번 방송도 기대해주세요!!😎
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="guide-section" class="main-section">
+            <div class="guide-list">
+                <a href="#">
+                    <h3>고객센터</h3>
+                    <h2>고객의 소리를 적극 경청하고 고객만족 향상 활동을 지속적으로 실천합니다.</h2>
+                    <span class="arrow"><i class="fa-solid fa-chevron-right"></i></span>
+                </a>
+                <a href="#">
+                    <h3>제휴 안내</h3>
+                    <h2>다양한 온라인 제휴와 카드 정보를 확인하세요.</h2>
+                    <span class="arrow"><i class="fa-solid fa-chevron-right"></i></span>
+                </a>
+                <a href="#">
+                    <h3>공지사항</h3>
+                    <h2>파리바게뜨 공지내용을 확인하세요.</h2>
+                    <span class="arrow"><i class="fa-solid fa-chevron-right"></i></span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="widget-list list">
+                <div class="widget">
+                    <h3 class="widget-header">Info</h3>
+                    <ul class="widget-body">
+                        <li class="info-item">
+                            <a href="#">브랜드 소개</a>
+                        </li>
+                        <li class="info-item">
+                            <a href="#">창업 안내</a>
+                        </li>
+                        <li class="info-item">
+                            <a href="#">거래 희망 사전등록</a>
+                        </li>
+                        <li class="info-item">
+                            <a href="#">윤리신고센터</a>
+                        </li>
+                        <li class="info-item">
+                            <a href="#">고객 칭찬</a>
+                        </li>
+                        <li class="info-item">
+                            <a href="#">채용</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="widget">
+                    <h3 class="widget-header">Contact Us</h3>
+                    <div class="widget-body">
+                        <p class="contact-tel"><a href="#">080-731-2027</a></p>
+                        <p class="contact-time">평일 09:00 - 17:00</p>
+                        <p class="contact-time">(점심 12:00 - 13:00)</p>
+                    </div>
+                </div>
+                <div class="widget">
+                    <div class="footer-logos">
+                        <a href="#">
+                            <img src="./img/footer1.png" alt="footer1">
+                        </a>
+                        <a href="#">
+                            <img src="./img/footer2.png" alt="footer2">
+                        </a>
+                        <a href="#">
+                            <img src="./img/footer3.png" alt="footer3">
+                        </a>
+                        <a href="#">
+                            <img src="./img/footer4.png" alt="footer4">
+                        </a>
+                        <a href="#">
+                            <img src="./img/footer5.png" alt="footer5">
+                        </a>
+                        <a href="#">
+                            <img src="./img/footer6.png" alt="footer6">
+                        </a>
+                    </div>
+                </div>
+                <div class="widget">
+                    <h3 class="widget-header">Follow Us</h3>
+                    <div class="widget-body">
+                        <div class="sns">
+                            <a href="#">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </div>
+                        <div class="brand-site">
+                            <button type="button" class="selector">
+                                <span class="selector-text">브랜드 사이트</span>
+                                <i class="fa-solid fa-caret-up selector-icon"></i>
+                            </button>
+                            <div class="links">
+                                <ul class="site-menu">
+                                    <li class="menu-item">
+                                        <span>파리크라상</span>
+                                        <ul class="site-list">
+                                            <li class="sub-item">
+                                                <a href="#">파리크라상</a>
+                                            </li>
+                                            <li class="sub-item">
+                                                <a href="#">파스쿠찌</a>
+                                            </li>
+                                            <li class="sub-item">
+                                                <a href="#">파리바게뜨 중국</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item">
+                                        <span>비알코리아(주)</span>
+                                        <ul class="site-list">
+                                            <li class="sub-item">
+                                                <a href="#">베스킨라빈스</a>
+                                            </li>
+                                            <li class="sub-item">
+                                                <a href="#">던킨도너츠</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item">
+                                        <span>기타</span>
+                                        <ul class="site-list">
+                                            <li class="sub-item">
+                                                <a href="#">(주)샤니</a>
+                                            </li>
+                                            <li class="sub-item">
+                                                <a href="#">(주)삼립식품</a>
+                                            </li>
+                                            <li class="sub-item">
+                                                <a href="#">해피포인트</a>
+                                            </li>
+                                            <li class="sub-item">
+                                                <a href="#">SPC외식브랜드</a>
+                                            </li>
+                                            <li class="sub-item">
+                                                <a href="#">디퀸즈케이터링</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <ul class="footer-menu">
+                <li>
+                    <a href="#">이용약관</a>
+                </li>
+                <li>
+                    <a href="#">개인정보 처리 방침</a>
+                </li>
+                <li>
+                    <a href="#">이메일 무단 수집거부</a>
+                </li>
+                <li>
+                    <a href="#">영상정보처리기기 운영 관리방침</a>
+                </li>
+            </ul>
+        </div>
+        <div class="copy">
+            <span>All Rights Reserved © PARIS BAGUETTE, PARIS CROISSANT CO., LTD.</span>
+            <span>경기도 성남시 중원구 상대원동 사기막골로 31번길 18 (주) 파리크라상</span>
+        </div>
+    </footer>
+
+    <aside id="aside">
+        <ul class="aside-list">
+            <li class="aside-item">
+                <a href="#" id="top-btn">
+                    <i class="top-icon"></i>
+                    <span class="label">TOP</span>
+                </a>
+            </li>
+            <li class="aside-item">
+                <a href="#">
+                    <i class="store-icon"></i>
+                    <span class="label">매장 안내</span>
+                </a>
+            </li>
+            <li class="aside-item">
+                <a href="#">
+                    <i class="delivery-icon"></i>
+                    <span class="label">배달 신청</span>
+                </a>
+            </li>
+            <li class="aside-item">
+                <a href="#">
+                    <i class="promotion-icon"></i>
+                    <span class="label">프로모션</span>
+                </a>
+            </li>
+            <li class="aside-item">
+                <a href="#">
+                    <i class="franchise-icon"></i>
+                    <span class="label">창업 안내</span>
+                </a>
+            </li>
+            <li class="aside-item">
+                <a href="#">
+                    <i class="app-icon"></i>
+                    <span class="label">APP</span>
+                </a>
+            </li>
+        </ul>
+    </aside>
+
+    <!-- jQuery -->
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <!-- Slick -->
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- JS -->
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
