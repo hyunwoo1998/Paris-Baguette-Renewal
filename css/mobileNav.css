@@ -45,7 +45,7 @@
 
 #hamburger-close>i {
     padding: 10px;
-    font-size: 3rem;
+    font-size: var(--font36);
     color: rgba(0, 0, 0, 0.8);
 }
 
@@ -58,7 +58,7 @@
     position: relative;
     display: block;
     padding: 10px 20px;
-    font-size: 1.4rem;
+    font-size: var(--font16);
     color: #888;
 }
 
@@ -73,12 +73,12 @@
 
 .mobile-sub-item>a {
     padding: 10px 40px 5px;
-    font-size: 1.3rem;
+    font-size: var(--font14);
 }
 
 .follow-us>h4 {
     padding: 20px;
-    font-size: 1.4rem;
+    font-size: var(--font14);
     color: #888;
 }
 
@@ -98,6 +98,6 @@
 }
 
 .mobile-nav-sns>a>i {
-    padding: 8px 0;
-    font-size: 3rem;
+    padding: 10px 0;
+    font-size: var(--font24);
 }

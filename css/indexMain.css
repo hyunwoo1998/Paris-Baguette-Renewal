@@ -30,7 +30,7 @@
     position: relative;
     padding: 0 10px;
     font-family: var(--gmarketB);
-    font-size: 2.4rem;
+    font-size: var(--font24);
     letter-spacing: 2px;
     color: white;
 }
@@ -53,7 +53,7 @@
 }
 
 .more-btn {
-    font-size: 1.4rem;
+    font-size: var(--font14);
     padding-top: 3px;
     border-bottom: 2px solid black;
 }
@@ -69,7 +69,7 @@
 }
 
 .post-excerpt {
-    font-size: 1.6rem;
+    font-size: var(--font16);
     line-height: 24px;
 }
 
@@ -116,7 +116,7 @@
     border: 0;
     background: none;
     color: white;
-    font-size: 5rem;
+    font-size: var(--font48);
     text-shadow: 1px 1px 5px rgba(0, 0, 0, .8);
     opacity: .8;
     transition: opacity .2s;
@@ -188,7 +188,7 @@
 }
 
 .magazine-item .post-title {
-    font-size: 2.4rem;
+    font-size: var(--font24);
 }
 
 /* story-section */
@@ -209,18 +209,18 @@
     padding: 5px 10px;
     background: var(--blue);
     color: white;
-    font-size: 1.2rem;
+    font-size: var(--font12);
 }
 
 .story-item .post-title {
-    font-size: 2.4rem;
+    font-size: var(--font24);
     line-height: 30px;
 }
 
 .post-date {
     display: block;
     margin-top: 15px;
-    font-size: 1.2rem;
+    font-size: var(--font12);
     color: #888;
 }
 
@@ -234,7 +234,7 @@
 }
 
 .products-name {
-    font-size: 1.6rem;
+    font-size: var(--font16);
     margin-top: 20px;
 }
 
@@ -247,7 +247,7 @@
 
 .section-title small {
     font-family: var(--gmarketM);
-    font-size: 1.6rem;
+    font-size: var(--font16);
     letter-spacing: .5px;
     margin-top: 20px;
 }
@@ -270,7 +270,7 @@
     position: absolute;
     top: 10px;
     right: 10px;
-    font-size: 2.4rem;
+    font-size: var(--font24);
     color: white;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, .8);
     opacity: .8;
@@ -294,7 +294,7 @@
 .instagram-content {
     width: 80%;
     margin: 0 auto;
-    font-size: 1.8rem;
+    font-size: var(--font18);
     color: white;
     text-align: center;
     transform: translateY(10%);
@@ -318,7 +318,7 @@
     max-height: 110px;
     overflow: hidden;
     line-height: 22px;
-    font-size: 1.4rem;
+    font-size: var(--font14);
 }
 
 .instagram-item:hover>.img {
@@ -367,13 +367,13 @@
 .guide-list h3 {
     margin: 10px 0 20px;
     font-family: var(--gmarketB);
-    font-size: 2.4rem;
+    font-size: var(--font24);
     color: var(--blue);
 }
 
 .guide-list h2 {
     line-height: 24px;
-    font-size: 1.6rem;
+    font-size: var(--font16);
 }
 
 .guide-list .arrow {
@@ -384,6 +384,6 @@
     border-radius: 100%;
     background: var(--blue);
     color: white;
-    font-size: 1.6rem;
+    font-size: var(--font16);
     transform: translateY(-50%);
 }

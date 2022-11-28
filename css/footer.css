@@ -16,12 +16,12 @@
 
 .widget-header {
     font-family: var(--gmarketB);
-    font-size: 2.4rem;
+    font-size: var(--font24);
     margin-bottom: 30px;
 }
 
 .widget-body {
-    font-size: 1.4rem;
+    font-size: var(--font14);
 }
 
 .info-item {
@@ -29,7 +29,7 @@
 }
 
 .contact-tel {
-    font-size: 1.8rem;
+    font-size: var(--font18);
     font-weight: 700;
     margin-bottom: 16px;
 }
@@ -37,7 +37,7 @@
 .contact-time {
     display: inline-block;
     margin-bottom: 5px;
-    font-size: 1.3rem;
+    font-size: var(--font14);
 }
 
 .footer-logos>a:first-child>img {
@@ -64,8 +64,8 @@
 }
 
 .sns>a>i {
-    padding: 8px 0;
-    font-size: 3rem;
+    padding: 10px 0;
+    font-size: var(--font24);
 }
 
 .brand-site {
@@ -80,14 +80,14 @@
     border-radius: 5px;
     background: transparent;
     color: rgba(255, 255, 255, 0.8);
-    font-size: 1.4rem;
+    font-size: var(--font14);
 }
 
 .selector-icon {
     position: absolute;
     right: 15px;
     top: 12px;
-    font-size: 1.8rem;
+    font-size: var(--font18);
 }
 
 .links {
@@ -100,7 +100,7 @@
     border: solid 1px #979797;
     border-radius: 5px;
     background: #888;
-    font-size: 1.4rem;
+    font-size: var(--font14);
 }
 
 .menu-item {
@@ -132,7 +132,7 @@
     display: flex;
     justify-content: center;
     padding: 10px 0;
-    font-size: 1.2rem;
+    font-size: var(--font12);
 }
 
 .footer-menu>li+li::before {

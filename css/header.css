@@ -27,7 +27,7 @@
     border: 0;
     background: none;
     color: white;
-    font-size: 2.4rem;
+    font-size: var(--font24);
     transform: translateY(-50%);
 }
 
@@ -38,7 +38,7 @@
 .gnb-menu {
     display: flex;
     gap: 20px;
-    font-size: 1.6rem;
+    font-size: var(--font16);
 }
 
 .gnb-menu>li {
@@ -83,7 +83,7 @@
 .sub-menu-list>li {
     width: 150px;
     margin-bottom: 20px;
-    font-size: 1.4rem;
+    font-size: var(--font14);
     transition: all .2s ease-out;
 }
 
@@ -109,7 +109,7 @@
     border: 0;
     background: none;
     color: white;
-    font-size: 1.5rem;
+    font-size: var(--font14);
 }
 
 /* search-form */
@@ -131,7 +131,7 @@
     width: 100%;
     padding: 35px 70px;
     border: 0;
-    font-size: 1.8rem;
+    font-size: var(--font18);
     font-family: var(--GmarketM);
 }
 
@@ -152,6 +152,6 @@
 }
 
 #search-form i[class*="-icon"] {
-    font-size: 3rem;
+    font-size: var(--font24);
     color: var(--blue);
 }
